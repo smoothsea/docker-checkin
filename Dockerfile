@@ -7,7 +7,6 @@ RUN cargo build --release
 
 #######################RUNTIME IMAGE##############
 FROM debian:buster-slim
-COPY sources.list /etc/apt/
 RUN apt-get update && apt-get install -y \
     --no-install-recommends \
     openssl \
