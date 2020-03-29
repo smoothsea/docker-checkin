@@ -1,6 +1,6 @@
 #######################BUILD IAMGE################
 FROM rust:1.42.0 as build
-ENV REFRESHED_AT 2020-03-27
+ENV REFRESHED_AT 2020-03-29
 RUN mkdir /app && cd /app && git clone https://github.com/smoothsea/check-in.git && cd check-in
 WORKDIR /app/check-in
 RUN cargo build --release
